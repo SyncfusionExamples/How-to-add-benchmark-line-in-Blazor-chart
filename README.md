@@ -1,33 +1,12 @@
 # How-to-add-benchmark-line-in-Blazor-chart
 
-This article explains how to add a benchmark line in Blazor chart.
+This article explains how to add a benchmark line in [Blazor chart](https://www.syncfusion.com/blazor-components/blazor-charts).
 
 **Creating benchmark line in blazor chart using ChartAnnotations**
 
 You can represent a Benchmark line in [Blazor chart](https://www.syncfusion.com/blazor-components/blazor-charts) component by using [ChartAnnotations](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartAnnotations.html). Annotations are texts, shapes, or images that are used to highlight a specific region on interest in chart.
 
-The [ChartAnnotations](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartAnnotations.html) property allows to add annotations to the chart. Specify the ID of the element that needs to be displayed in the chart area by using the [Content](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartAnnotation.html#Syncfusion_Blazor_Charts_ChartAnnotation_Content) property of the annotation.
-
-The below code snippet shows how to insert a html element in blazor chart using annotations.
-
-```cshtml
-
-<ChartAnnotations>
-    <ChartAnnotation X="33.94" Y="100"  Region="Regions.Series" CoordinateUnits="Units.Pixel">
-        <ContentTemplate>
-            <div id="bench-mark">
-                <hr id="test" style="border-top: 2px solid orange;opacity:100%; width: 10000px"/>                        
-            </div>                  
-        </ContentTemplate>                
-    </ChartAnnotation>   
-    <ChartAnnotation X="@Country" Y="65" Region="Regions.Series" CoordinateUnits="Units.Point">
-        <ContentTemplate  >
-            <div style="font-size:90%; opacity:1; color:blue;position: absolute; top: 30px; left:-550px;">Benchmark</div>                
-        </ContentTemplate>            
-    </ChartAnnotation>
-</ChartAnnotations>
-
-```
+The [ChartAnnotations](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartAnnotations.html) property allows to add annotations to the chart.  Using [ContentTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartAnnotation.html#Syncfusion_Blazor_Charts_ChartAnnotation_ContentTemplate) property, we can insert any html element that needs to be displayed in the chart area. 
 
 The below code example illustrates this.
 
