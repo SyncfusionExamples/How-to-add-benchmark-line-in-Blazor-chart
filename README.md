@@ -1,10 +1,10 @@
 # How-to-add-benchmark-line-in-Blazor-chart
 
-This article explains how to add a benchmark line in [Blazor chart](https://www.syncfusion.com/blazor-components/blazor-charts).
+This article explains how to add a benchmark line in Blazor Chart Component.
 
-**Creating benchmark line in blazor chart using ChartAnnotations**
+**Creating benchmark line in Blazor chart**
 
-You can represent a Benchmark line in [Blazor chart](https://www.syncfusion.com/blazor-components/blazor-charts) component by using [ChartAnnotations](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartAnnotations.html). Annotations are texts, shapes, or images that are used to highlight a specific region on interest in chart.
+The benchmark line can be achieved in the [Blazor Chart](https://www.syncfusion.com/blazor-components/blazor-charts) component by using [ChartAnnotations](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartAnnotations.html). Annotations are texts, shapes, or images that are used to highlight a specific region on interest in chart.
 
 The [ChartAnnotations](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartAnnotations.html) property allows to add annotations to the chart.  Using [ContentTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartAnnotation.html#Syncfusion_Blazor_Charts_ChartAnnotation_ContentTemplate) property, we can insert any html element that needs to be displayed in the chart area. 
 
@@ -64,7 +64,7 @@ The below code example illustrates this.
 
 ```
 
-The following screenshot illustrate the output of the above code snippet.
+The following screenshot illustrates the output of the above code snippet.
 
 **Output:**
 
@@ -72,7 +72,7 @@ The following screenshot illustrate the output of the above code snippet.
 
 **Conclusion**
 
-I hope you enjoyed learning how to add benchmark line in Blazor chart component.
+I hope you enjoyed learning how to add benchmark line in Blazor Chart Component.
 
 You can refer to our [Blazor Chart feature tour](https://www.syncfusion.com/blazor-components/blazor-charts) page to know about its other groundbreaking feature representations and [documentation](https://blazor.syncfusion.com/documentation/chart/getting-started), and how to quickly get started for configuration specifications. You can also explore our [Blazor Chart example](https://blazor.syncfusion.com/demos/chart/line?theme=bootstrap5) to understand how to create and manipulate data.
 
