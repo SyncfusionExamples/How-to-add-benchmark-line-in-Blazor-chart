@@ -1,81 +1,81 @@
-# How-to-add-benchmark-line-in-Blazor-chart
+# How to Add a Benchmark Line in a Blazor Chart Using Chart Annotations
 
-This article explains how to add a benchmark line in Blazor Chart Component.
+## Overview
 
-**Creating benchmark line in Blazor chart**
+This sample demonstrates how to add a benchmark line to a Syncfusion [Blazor Charts](https://www.syncfusion.com/blazor-components/blazor-charts) component by using the `ChartAnnotations` collection. The chart displays country medal data as a column series and overlays a benchmark indicator using annotation content rendered within the chart area.
 
-The benchmark line can be achieved in the [Blazor Chart](https://www.syncfusion.com/blazor-components/blazor-charts) component by using [ChartAnnotations](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartAnnotations.html). Annotations are texts, shapes, or images that are used to highlight a specific region on interest in chart.
+The approach allows developers to visually compare actual values against a target threshold without modifying the underlying data series. By combining `ChartAnnotation` and `ContentTemplate`, custom HTML content can be positioned precisely within the chart.
 
-The [ChartAnnotations](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartAnnotations.html) property allows to add annotations to the chart.  Using [ContentTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartAnnotation.html#Syncfusion_Blazor_Charts_ChartAnnotation_ContentTemplate) property, we can insert any html element that needs to be displayed in the chart area. 
+## Key Features
 
-The below code example illustrates this.
+- Uses the `SfChart` component to render the chart.
+- Configures `ChartPrimaryXAxis` with `ValueType="ValueType.Category"` for category-based data visualization.
+- Adds custom benchmark visuals through the `ChartAnnotations` collection.
+- Uses `ChartAnnotation` elements with:
+  - `X`
+  - `Y`
+  - `Region`
+  - `CoordinateUnits`
+- Uses the `ContentTemplate` property to render custom HTML content inside the chart area.
+- Creates a benchmark line using an HTML `<hr>` element rendered through an annotation template.
+- Displays a benchmark label using a second annotation positioned relative to a chart data point.
+- Binds chart data through the `ChartSeries` component using:
+  - `DataSource`
+  - `XName`
+  - `YName`
+  - `Type="ChartSeriesType.Column"`
 
-**Index.razor**
+## Prerequisites
 
-```cshtml
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/)
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet) compatible with the project's target framework
 
-@using Syncfusion.Blazor.Charts
+## How to Run the Project
 
-<SfChart Title="Olympic Medals">
-    <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category">
-    </ChartPrimaryXAxis>
-    <ChartAnnotations>
-        <ChartAnnotation X="33.94" Y="100"  Region="Regions.Series" CoordinateUnits="Units.Pixel">
-            <ContentTemplate>
-                <div id="bench-mark">
-                    <hr id="test" style="border-top: 2px solid orange;opacity:100%; width: 10000px"/>                        
-                </div>                  
-            </ContentTemplate>                
-        </ChartAnnotation>   
-        <ChartAnnotation X="@Country" Y="65" Region="Regions.Series" CoordinateUnits="Units.Point">
-            <ContentTemplate  >
-                <div style="font-size:90%; opacity:1; color:blue;position: absolute; top: 30px; left:-418px;">Benchmark</div>                
-            </ContentTemplate>            
-        </ChartAnnotation>
-    </ChartAnnotations>
-    <ChartSeriesCollection>
-        <ChartSeries DataSource="@MedalDetails" XName="Country" YName="Gold" Type="ChartSeriesType.Column">
-        </ChartSeries>
-    </ChartSeriesCollection>
-</SfChart>
+**Visual Studio 2022**
 
-@code {
+1. Clone or download the repository.
+2. Open the project file:
+   - `Benchmark/Benchmark.csproj`
+3. Restore NuGet packages.
+4. Build the project.
+5. Run the application using `Ctrl+F5`.
 
-    string Country = "Australia";
+**Visual Studio Code**
 
-    public class ChartData
-    {
-        public string Country { get; set; }
-        public double Gold { get; set; }
-    }
+1. Clone or download the repository.
+2. Open the repository folder in Visual Studio Code.
+3. Open the integrated terminal.
+4. Navigate to the project directory.
 
-    public List<ChartData> MedalDetails = new List<ChartData>
-    {
-        new ChartData{ Country= "USA", Gold=50  },
-        new ChartData{ Country= "China", Gold=40 },
-        new ChartData{ Country= "Japan", Gold=70 },
-        new ChartData{ Country= "Australia", Gold=60},
-        new ChartData{ Country= "France", Gold=50 },
-        new ChartData{ Country= "Germany", Gold=40 },
-        new ChartData{ Country= "Italy", Gold=40 },
-        new ChartData{ Country= "Sweden", Gold=30 }
-    };
-}
-
+```bash
+cd Benchmark
 ```
 
-The following screenshot illustrates the output of the above code snippet.
+5. Restore NuGet packages:
 
-**Output:**
+```bash
+dotnet restore
+```
 
- ![](/benchmark.png)
+6. Run the application:
 
-**Conclusion**
+```bash
+dotnet run
+```
 
-I hope you enjoyed learning how to add benchmark line in Blazor Chart Component.
+7. Open the local URL displayed in the console output.
 
-You can refer to our [Blazor Chart feature tour](https://www.syncfusion.com/blazor-components/blazor-charts) page to know about its other groundbreaking feature representations and [documentation](https://blazor.syncfusion.com/documentation/chart/getting-started), and how to quickly get started for configuration specifications. You can also explore our [Blazor Chart example](https://blazor.syncfusion.com/demos/chart/line?theme=bootstrap5) to understand how to create and manipulate data.
+## Project Structure
 
-For current customers, you can check out our components from the [License and Downloads](https://www.syncfusion.com/sales/teamlicense) page. If you are new to Syncfusion, you can try our 30-day [free trial](https://www.syncfusion.com/downloads/blazor) to check out our other controls.
+`Benchmark/Pages/Index.razor` - Demonstrates the benchmark-line implementation using `SfChart`, `ChartAnnotations`, `ChartAnnotation`, and a column series.
 
-If you have any queries or require clarifications, please let us know in the comments section below. You can also contact us through our [support forums](https://www.syncfusion.com/forums), [support portal](https://support.syncfusion.com/create), or [feedback portal](https://www.syncfusion.com/feedback/blazor-components?control=charts). We are always happy to assist you!
+## Support and Feedback
+
+- For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
+- To report an issue specific to this sample, open a GitHub issue in this repository.
+- Official documentation: https://help.syncfusion.com/chart-sdk/blazor/charts/getting-started
+
+## License
+
+This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
