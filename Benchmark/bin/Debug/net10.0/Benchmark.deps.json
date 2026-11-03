@@ -1,0 +1,163 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Benchmark/1.0.0": {
+        "dependencies": {
+          "Syncfusion.Blazor.Charts": "35.1.43"
+        },
+        "runtime": {
+          "Benchmark.dll": {}
+        }
+      },
+      "Syncfusion.Blazor.Charts/35.1.43": {
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "35.1.43",
+          "Syncfusion.Blazor.Data": "35.1.43",
+          "Syncfusion.Blazor.DataVizCommon": "35.1.43",
+          "Syncfusion.ExcelExport.Net.Core": "35.1.43",
+          "Syncfusion.PdfExport.Net.Core": "35.1.43",
+          "Syncfusion.Telemetry": "35.1.43"
+        },
+        "runtime": {
+          "lib/net10.0/Syncfusion.Blazor.Charts.dll": {
+            "assemblyVersion": "35.1.43.0",
+            "fileVersion": "35.1.43.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Core/35.1.43": {
+        "dependencies": {
+          "Syncfusion.Licensing": "35.1.43"
+        },
+        "runtime": {
+          "lib/net10.0/Syncfusion.Blazor.Core.dll": {
+            "assemblyVersion": "35.1.43.0",
+            "fileVersion": "35.1.43.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Data/35.1.43": {
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "35.1.43"
+        },
+        "runtime": {
+          "lib/net10.0/Syncfusion.Blazor.Data.dll": {
+            "assemblyVersion": "35.1.43.0",
+            "fileVersion": "35.1.43.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.DataVizCommon/35.1.43": {
+        "dependencies": {
+          "Syncfusion.Blazor.Core": "35.1.43"
+        },
+        "runtime": {
+          "lib/net10.0/Syncfusion.Blazor.DataVizCommon.dll": {
+            "assemblyVersion": "35.1.43.0",
+            "fileVersion": "35.1.43.0"
+          }
+        }
+      },
+      "Syncfusion.ExcelExport.Net.Core/35.1.43": {
+        "runtime": {
+          "lib/net10.0/Syncfusion.ExcelExport.Net.dll": {
+            "assemblyVersion": "35.1.43.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Syncfusion.Licensing/35.1.43": {
+        "runtime": {
+          "lib/net10.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "35.1.43.0",
+            "fileVersion": "35.1.43.0"
+          }
+        }
+      },
+      "Syncfusion.PdfExport.Net.Core/35.1.43": {
+        "runtime": {
+          "lib/net10.0/Syncfusion.PdfExport.Net.dll": {
+            "assemblyVersion": "35.1.43.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Syncfusion.Telemetry/35.1.43": {
+        "runtime": {
+          "lib/net10.0/Syncfusion.Telemetry.dll": {
+            "assemblyVersion": "35.1.43.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Benchmark/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Charts/35.1.43": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bh924FLNfE0C55Ph4sm9DB1PtUUGS0wX+yiy+F1u2SHDv+ptQlUE12p7nTPy4PFcz8RYs3Dj+XnWd71lHv5Eqg==",
+      "path": "syncfusion.blazor.charts/35.1.43",
+      "hashPath": "syncfusion.blazor.charts.35.1.43.nupkg.sha512"
+    },
+    "Syncfusion.Blazor.Core/35.1.43": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UrQeeo19NzX9Z6j/YdRyLfln/xp5V5pESJ/mI8EfOHqtzqtWdjlDGLoy2dZ93jk/c7/AKbG6Vh7JquidmlajjQ==",
+      "path": "syncfusion.blazor.core/35.1.43",
+      "hashPath": "syncfusion.blazor.core.35.1.43.nupkg.sha512"
+    },
+    "Syncfusion.Blazor.Data/35.1.43": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KYfl2UO8NpdTy5+bVqWLEvrCxT/26Il4Os6xhwS4Mpwl0g9y56zIq4MCG9f1r8HKrJN4xfbCvdlYYN3Rl6lGIQ==",
+      "path": "syncfusion.blazor.data/35.1.43",
+      "hashPath": "syncfusion.blazor.data.35.1.43.nupkg.sha512"
+    },
+    "Syncfusion.Blazor.DataVizCommon/35.1.43": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZB/LCf0GywI2SvpCPQa4th2z8jMIVMp207xYB4aAZSGkfNniBH/HQITS+xpQbo527MKaB7BcwQCuYmRzpizbag==",
+      "path": "syncfusion.blazor.datavizcommon/35.1.43",
+      "hashPath": "syncfusion.blazor.datavizcommon.35.1.43.nupkg.sha512"
+    },
+    "Syncfusion.ExcelExport.Net.Core/35.1.43": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9KAuiMUkh24sTmQn+7OrGNBOwRZkyZ4XD5Q3b/2CwaE983VCDQT3IxG9FTA9PULAJNCCRtc6Q960mpZiLPZwwg==",
+      "path": "syncfusion.excelexport.net.core/35.1.43",
+      "hashPath": "syncfusion.excelexport.net.core.35.1.43.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/35.1.43": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-refyN0KIPZFlwNW8WJ6NGs+WekoaEkSFrNMMKy6JNsPZJj/5oMp7VsRUa1G3GXwNbBA/pYeBvL7EwPI5AoPIGQ==",
+      "path": "syncfusion.licensing/35.1.43",
+      "hashPath": "syncfusion.licensing.35.1.43.nupkg.sha512"
+    },
+    "Syncfusion.PdfExport.Net.Core/35.1.43": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uazjbfGz5jb0vuUJKvU9fautHqSBSlgWvrm4UncLqTdU82RWTc9iFzW+pRDsnz58lIALNbcK+Wxc30HVcQGbGA==",
+      "path": "syncfusion.pdfexport.net.core/35.1.43",
+      "hashPath": "syncfusion.pdfexport.net.core.35.1.43.nupkg.sha512"
+    },
+    "Syncfusion.Telemetry/35.1.43": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uILJmArHyjFDMRBLTehNj3ojBliedyEbbMH5l/tDwrSqpDtL0Yvd3LW++zwMQMA2lQvdKPsJR6blgDQQmD5ucQ==",
+      "path": "syncfusion.telemetry/35.1.43",
+      "hashPath": "syncfusion.telemetry.35.1.43.nupkg.sha512"
+    }
+  }
+}
