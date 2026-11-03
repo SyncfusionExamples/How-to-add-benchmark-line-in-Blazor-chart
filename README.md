@@ -10,10 +10,11 @@ The [ChartAnnotations](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.C
 
 The below code example illustrates this.
 
-**Index.razor**
+**Home.razor**
 
 ```cshtml
 
+@rendermode InteractiveServer
 @using Syncfusion.Blazor.Charts
 
 <SfChart Title="Olympic Medals">
@@ -29,7 +30,7 @@ The below code example illustrates this.
         </ChartAnnotation>   
         <ChartAnnotation X="@Country" Y="65" Region="Regions.Series" CoordinateUnits="Units.Point">
             <ContentTemplate  >
-                <div style="font-size:90%; opacity:1; color:blue;position: absolute; top: 30px; left:-418px;">Benchmark</div>                
+                <div style="font-size:90%; opacity:1; color:blue;position: absolute; top: 30px; left:-550px;">Benchmark</div>                
             </ContentTemplate>            
         </ChartAnnotation>
     </ChartAnnotations>
